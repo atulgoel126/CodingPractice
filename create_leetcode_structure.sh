@@ -35,7 +35,7 @@ fi
 
 # Create the test file if it doesn't exist and add default content
 if [ ! -f "$tests_file" ]; then
-  echo "package q${question_number};" > "$tests_file"
+  echo "package leetcode.q${question_number};" > "$tests_file"
   echo "" >> "$tests_file"
   echo "import static org.junit.jupiter.api.Assertions.*;" >> "$tests_file"
   echo "import org.junit.jupiter.api.Test;" >> "$tests_file"
