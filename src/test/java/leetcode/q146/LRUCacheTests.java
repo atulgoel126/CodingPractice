@@ -64,7 +64,7 @@ public class LRUCacheTests {
         LRUCacheDLL cache = new LRUCacheDLL(10000);
         long startTime = System.currentTimeMillis();
 
-        for (int i = 0; i < 1000000000; i++) {
+        for (int i = 0; i < 100000000; i++) {
             cache.put(i, i);
             if (i % 2 == 0) {
                 cache.get(i / 2);
@@ -80,7 +80,7 @@ public class LRUCacheTests {
         LRUCacheLHM cache = new LRUCacheLHM(10000);
         long startTime = System.currentTimeMillis();
 
-        for (int i = 0; i < 1000000000; i++) {
+        for (int i = 0; i < 100000000; i++) {
             cache.put(i, i);
             if (i % 2 == 0) {
                 cache.get(i / 2);

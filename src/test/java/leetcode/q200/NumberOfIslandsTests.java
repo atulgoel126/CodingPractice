@@ -108,7 +108,7 @@ public class NumberOfIslandsTests {
 
         long duration = (endTime - startTime) / 1000000; // convert to milliseconds
 
-        System.out.println("Performance test duration: " + duration + " ms");
+        System.out.println("NumberOfIslandsTests Performance test duration: " + duration + " ms");
         assertEquals(2000000, result); // Expecting 2,000,000 islands
     }
 }
