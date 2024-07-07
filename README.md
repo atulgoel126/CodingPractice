@@ -220,9 +220,27 @@ Here is an example of the structure after running the script:
 5. **Question #224 (Hard)** - Basic Calculator
 
 ### Linked List (10 Questions)
-1. **Question #141 (Easy)** - Linked List Cycle
-2. **Question #2 (Medium)** - Add Two Numbers
-3. **Question #21 (Easy)** - Merge Two
+
+1. Question #141 (Easy) - Linked List Cycle
+2. Question #2 (Medium) - Add Two Numbers
+3. Question #21 (Easy) - Merge Two Sorted Lists
+4. Question #138 (Medium) - Copy List with Random Pointer
+5. Question #92 (Medium) - Reverse Linked List II
+6. Question #25 (Hard) - Reverse Nodes in k-Group
+7. Question #19 (Medium) - Remove Nth Node From End of List
+8. Question #82 (Medium) - Remove Duplicates from Sorted List II
+9. Question #61 (Medium) - Rotate List
+10. Question #86 (Medium) - Partition List
+
+### Trie (2 Questions)
+
+1. Question #208 (Medium) - Implement Trie (Prefix Tree)
+2. Question #648 (Medium) - Search Suggestions System
+
+### Monotonic Stack (2 Questions)
+
+1. Question #739 (Medium) - Daily Temperatures
+2. Question #901 (Medium) - Online Stock Span
 
 
 ## Total - 143 problems
