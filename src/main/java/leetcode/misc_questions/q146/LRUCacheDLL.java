@@ -1,13 +1,12 @@
 package leetcode.misc_questions.q146;
-
-import leetcode.commons.*;
-
+import leetcode.commons.DoubleLinkedList;
+import leetcode.commons.Node;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 
 public class LRUCacheDLL extends LinkedHashMap<Integer, Integer> {
     private final int capacity;
-    private final HashMap<Integer, Node> cache;
+    public final HashMap<Integer, Node> cache;
     private final DoubleLinkedList list;
 
     public LRUCacheDLL(int capacity) {

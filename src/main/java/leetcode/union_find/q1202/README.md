@@ -1,0 +1,1 @@
+The question "Smallest String With Swaps" asks: Given a string s, and a list of indices pairs where the indices pairs[i] = [a, b] indicates that the characters at indices a and b can be swapped, return the lexicographically smallest string that can be formed by performing at most swaps on s.

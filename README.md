@@ -1,36 +1,74 @@
 # Coding Practice
-
-This is a personal project to practice coding and writing tests. The provided shell script helps create a structured layout for solving coding problems and writing corresponding unit tests.
+This is a personal project to practice coding and writing tests. The provided shell script helps create a structured layout for solving coding problems and writing corresponding unit tests. Additionally, a NodeJS sub-project is included to automatically generate content for the README and test files using ChatGPT.
 
 ## Script Overview
+```create_leetcode_structure.sh```
+The shell script (create_leetcode_structure.sh) is used to create a directory structure for coding problems and their tests. It ensures that each problem has its own directory with a Java file for the solution, a corresponding test file, and a README file.
 
-The shell script (`create_leetcode_structure.sh`) is used to create a directory structure for coding problems and their tests. It ensures that each problem has its own directory with a Java file for the solution and a corresponding test file.
+```bulk_create_leetcode_structure.sh```
+The shell script (bulk_create_leetcode_structure.sh) automates the execution of create_leetcode_structure.sh for multiple questions listed in a JSON file (questions.json). It also installs jq if it's not already installed.
+
+```generate-content.js```
+The NodeJS script (generate-content.js) uses the ChatGPT API to insert data into the README and test files for each question. It reads the questions from the questions.json file and generates comprehensive descriptions and test cases.
 
 ## Usage
-
+```shell
+create_leetcode_structure.sh
+```
 To use the script, run it with the required arguments:
-
-```sh
-./create_leetcode_structure.sh <question number> <QuestionTitle>
+```shell
+./create_leetcode_structure.sh <QuestionNumber> <QuestionTitle> <Topic>
 ```
 
 ### Example
-
-```sh
-./create_structure.sh 1 TwoSum
+```shell
+./create_leetcode_structure.sh 1 TwoSum array_string
 ```
+
 This command will:
 
-1. Create the necessary directories for the problem and test.
-2. Generate a Java file for the problem (TwoSum.java) in the appropriate directory.
-3. Generate a corresponding test file (TwoSumTests.java).
-4. Create a README.md file in the problem's directory.
+* Create the necessary directories for the problem and test.
+* Generate a Java file for the problem (TwoSum.java) in the appropriate directory.
+* Generate a corresponding test file (TwoSumTests.java).
+* Create a README.md file in the problem's directory.
 
+## Usage
+
+```shell
+bulk_create_leetcode_structure.sh
+```
+
+To automate the creation of the structure for multiple questions:
+
+```shell
+./bulk_create_leetcode_structure.sh
+```
+
+This script reads the list of questions from the questions.json file and runs create_leetcode_structure.sh for each one.
+
+## Usage
+```
+generate-content.js
+```
+
+To use the NodeJS script for generating content:
+
+ - Set your ChatGPT API key in the terminal:
+
+```shell
+export CHATGPT_API_KEY=your_api_key_here
+```
+
+
+Run the script:
+```shell
+node generate-content.js
+```
+
+This script will generate content for the README and test files for each question listed in the questions.json file.
 
 ## Project Structure
-
-The project follows a specific directory structure to organize the problems and their tests. 
-Here is an example of the structure after running the script:
+The project follows a specific directory structure to organize the problems and their tests. Here is an example of the structure after running the scripts:
 
 ```css
 .
@@ -38,30 +76,48 @@ Here is an example of the structure after running the script:
 │   ├── main
 │   │   └── java
 │   │       └── leetcode
-│   │           └── q1
-│   │               ├── TwoSum.java
-│   │               └── README.md
+│   │           ├── array_string
+│   │           │   └── q1
+│   │           │       ├── TwoSum.java
+│   │           │       └── README.md
+│   │           └── prims_algorithm
+│   │               └── q1135
+│   │                   ├── ConnectingCitiesMinCost.java
+│   │                   └── README.md
 │   └── test
 │       └── java
-            └── leetcode
-│               └── q1
-│                   └── TwoSumTests.java
-└── create_structure.sh
+│           └── leetcode
+│               ├── array_string
+│               │   └── q1
+│               │       └── TwoSumTests.java
+│               └── prims_algorithm
+│                   └── q1135
+│                       └── ConnectingCitiesMinCostTests.java
+├── leetcode-chatgpt
+│   ├── generate-content.js
+│   ├── package.json
+│   └── .env
+├── questions.json
+├── run_leetcode_structure.sh
+└── create_leetcode_structure.sh
+```
+### Generated Files
+* src/main/java/leetcode/<topic>/q<number>/<QuestionTitle>.java: Java file containing the solution for the problem.
+* src/test/java/leetcode/<topic>/q<number>/<QuestionTitle>Tests.java: Java file containing the unit tests for the problem.
+* src/main/java/leetcode/<topic>/q<number>/README.md: README file specific to the problem, to provide additional details or documentation.
+
+## Additional Notes
+ - Ensure that the scripts (create_leetcode_structure.sh and bulk_create_leetcode_structure.sh) are executable. You can make them executable by running:
+
+```shell
+chmod +x create_leetcode_structure.sh run_leetcode_structure.sh
 ```
 
-### Generated Files
+- Make sure you have jq installed. The run_leetcode_structure.sh script will attempt to install it if it's not already available.
 
-* **src/main/java/leetcode/q1/TwoSum.java**: Java file containing the solution for the problem.
-* **src/test/java/q1/TwoSumTests.java**: Java file containing the unit tests for the problem.
-* **src/main/java/leetcode/q1/README.md**: README file specific to the problem, to provide additional details or documentation.
+ - Set your ChatGPT API key before running the NodeJS script to generate content:
 
-
-### Additional Notes
-
-- Ensure that the script (`create_leetcode_structure.sh`) is executable. You can make it executable by running:
-  ```sh
-  chmod +x create_leetcode_structure.sh
-
+This setup provides a comprehensive structure and automation for practicing coding problems, writing tests, and generating necessary documentation using ChatGPT.
 ## My Study Plan
 
 ### Heap/Priority Queue (10 Medium Questions)
@@ -101,6 +157,8 @@ Here is an example of the structure after running the script:
 ### Minimum Spanning Tree (2 Questions)
 1. **Question #1584 (Medium)** - Min Cost to Connect All Points
 2. **Question #1135 (Medium)** - Connecting Cities With Minimum Cost
+3. **Question #1168 (Medium)** - Optimize Water Distribution in a Village 
+4. **Question #1489 (Hard)** - Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree
 
 ### Kruskal's Algorithm (2 Questions)
 1. **Question #1584 (Medium)** - Min Cost to Connect All Points
@@ -186,6 +244,8 @@ Here is an example of the structure after running the script:
 ### Sliding Window (2 Questions)
 1. **Question #30 (Hard)** - Substring with Concatenation of All Words
 2. **Question #76 (Hard)** - Minimum Window Substring
+3. **Question #438 (Medium)** - Find All Anagrams in a String 
+4. **Question #567 (Medium)** - Permutation in String
 
 ### Matrix (5 Questions)
 1. **Question #36 (Medium)** - Valid Sudoku
@@ -221,32 +281,38 @@ Here is an example of the structure after running the script:
 
 ### Linked List (10 Questions)
 
-1. Question #141 (Easy) - Linked List Cycle
-2. Question #2 (Medium) - Add Two Numbers
-3. Question #21 (Easy) - Merge Two Sorted Lists
-4. Question #138 (Medium) - Copy List with Random Pointer
-5. Question #92 (Medium) - Reverse Linked List II
-6. Question #25 (Hard) - Reverse Nodes in k-Group
-7. Question #19 (Medium) - Remove Nth Node From End of List
-8. Question #82 (Medium) - Remove Duplicates from Sorted List II
-9. Question #61 (Medium) - Rotate List
-10. Question #86 (Medium) - Partition List
+1. **Question #141 (Easy)** - Linked List Cycle
+2. **Question #2 (Medium)** - Add Two Numbers
+3. **Question #21 (Easy)** - Merge Two Sorted Lists
+4. **Question #138 (Medium)** - Copy List with Random Pointer
+5. **Question #92 (Medium)** - Reverse Linked List II
+6. **Question #25 (Hard)** - Reverse Nodes in k-Group
+7. **Question #19 (Medium)** - Remove Nth Node From End of List
+8. **Question #82 (Medium)** - Remove Duplicates from Sorted List II
+9. **Question #61 (Medium)** - Rotate List
+10. **Question #86 (Medium)** - Partition List
 
 ### Trie (2 Questions)
 
-1. Question #208 (Medium) - Implement Trie (Prefix Tree)
-2. Question #648 (Medium) - Search Suggestions System
+1. **Question #208 (Medium)** - Implement Trie (Prefix Tree)
+2. **Question #648 (Medium)** - Search Suggestions System
 
 ### Monotonic Stack (2 Questions)
 
-1. Question #739 (Medium) - Daily Temperatures
-2. Question #901 (Medium) - Online Stock Span
+1. **Question #739 (Medium)** - Daily Temperatures
+2. **Question #901 (Medium)** - Online Stock Span
+
+### Graph Algorithms (4 Questions)
+1. **Question #207 (Medium)** - Course Schedule
+2. **Question #210 (Medium)** - Course Schedule II
+3. **Question #133 (Medium)** - Clone Graph
+4. **Question #417 (Medium)** - Pacific Atlantic Water Flow
 
 ### Misc Questions
-1. Question #72 (Medium) - Edit Distance
-2. Question #146 (Medium) - LRU Cache
-3. Question #200 (Medium) - Number of Islands
-4. Question #938 (Easy) - Range Sum of BST
+1. **Question #72 (Medium)** - Edit Distance
+2. **Question #146 (Medium)** - LRU Cache
+3. **Question #200 (Medium)** - Number of Islands
+4. **Question #938 (Easy)** - Range Sum of BST
 
-## Total - 143 problems
+## Total - 145 problems
 ## Completed - 7 problems

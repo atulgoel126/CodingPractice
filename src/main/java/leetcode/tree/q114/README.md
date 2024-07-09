@@ -1,0 +1,2 @@
+##Question Description
+Given a binary tree, flatten it to a linked list in-place. The flattened tree should follow a pre-order traversal, where the right child of each node is the next node in the linked list. The left child of each node should be set to null.
