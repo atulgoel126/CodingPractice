@@ -7,7 +7,7 @@ Each pair of points are connected by a straight line and the cost to connect two
 Example 1:
 
 Input: points = [[0,0],[2,2],[3,10],[5,2],[7,0]]
-Output: 20.90000
+Output: 20
 Explanation:
 We can connect the points as shown above to get the minimum cost of 20.90000.
 Notice that there are multiple paths that can be taken and the distance is calculated as the sum of the distances between consecutive points.
@@ -15,12 +15,12 @@ Notice that there are multiple paths that can be taken and the distance is calcu
 Example 2:
 
 Input: points = [[3,12],[-2,5],[-4,1]]
-Output: 18.94705
+Output: 18
 
 Example 3:
 
 Input: points = [[0,0],[1,1],[1,0],[-1,1]]
-Output: 4.00000
+Output: 4
 
 Constraints:
 
