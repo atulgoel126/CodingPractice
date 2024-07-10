@@ -27,9 +27,9 @@ public class MinCosttoConnectAllPointsTests {
     public void testNegativeCoordinates() {
         MinCosttoConnectAllPoints ob = new MinCosttoConnectAllPoints();
         int[][] points = {{-5,-10},{0,0},{10,-5},{-3,10}};
-        int expected = 40;
+        int expected = 43;
         int actual = ob.minCostConnectPoints(points);
-        assertEquals(expected, actual, "Expected minimum cost should be 40 for negative coordinates.");
+        assertEquals(expected, actual, "Expected minimum cost should be 43 for negative coordinates.");
     }
 
     @Test
