@@ -242,6 +242,11 @@ Here is an example of the structure after running the script:
 1. Question #739 (Medium) - Daily Temperatures
 2. Question #901 (Medium) - Online Stock Span
 
+### Misc Questions
+1. Question #72 (Medium) - Edit Distance
+2. Question #146 (Medium) - LRU Cache
+3. Question #200 (Medium) - Number of Islands
+4. Question #938 (Easy) - Range Sum of BST
 
 ## Total - 143 problems
-## Completed - 5 problems
+## Completed - 7 problems
