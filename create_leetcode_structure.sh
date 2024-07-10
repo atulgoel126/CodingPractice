@@ -1,21 +1,22 @@
 #!/bin/bash
 
-# Check if exactly two arguments are passed
-if [ "$#" -ne 2 ]; then
-  echo "Usage: $0 <question number> <QuestionTitle>"
+# Check if exactly three arguments are passed
+if [ "$#" -ne 3 ]; then
+  echo "Usage: $0 <question number> <QuestionTitle> <Topic>"
   exit 1
 fi
 
 # Assign input parameters to variables
 question_number=$1
 question_title=$2
+question_topic=$3
 
 # Remove spaces and special characters from the question title
 cleaned_title=$(echo "$question_title" | sed 's/[^a-zA-Z0-9]//g')
 
 # Define the directory paths
-leetcode_dir="src/main/java/leetcode/q${question_number}"
-tests_dir="src/test/java/leetcode/q${question_number}"
+leetcode_dir="src/main/java/leetcode/${question_topic}/q${question_number}"
+tests_dir="src/test/java/leetcode/${question_topic}/q${question_number}"
 
 # Define the file paths
 leetcode_file="${leetcode_dir}/${cleaned_title}.java"
@@ -28,18 +29,18 @@ mkdir -p "$tests_dir"
 
 # Create the main.java.leetcode file if it doesn't exist and add default content
 if [ ! -f "$leetcode_file" ]; then
-  echo "package leetcode.q${question_number};" > "$leetcode_file"
+  echo "package leetcode.${question_topic}.q${question_number};" > "$leetcode_file"
   echo "public class ${cleaned_title} {" >> "$leetcode_file"
   echo "}" >> "$leetcode_file"
 fi
 
 # Create the test file if it doesn't exist and add default content
 if [ ! -f "$tests_file" ]; then
-  echo "package leetcode.q${question_number};" > "$tests_file"
+  echo "package leetcode.${question_topic}.q${question_number};" > "$tests_file"
   echo "" >> "$tests_file"
   echo "import static org.junit.jupiter.api.Assertions.*;" >> "$tests_file"
   echo "import org.junit.jupiter.api.Test;" >> "$tests_file"
-  echo "import leetcode.q${question_number}.${cleaned_title};" >> "$tests_file"
+  echo "import leetcode.${question_topic}.q${question_number}.${cleaned_title};" >> "$tests_file"
   echo "" >> "$tests_file"
   echo "public class ${cleaned_title}Tests {" >> "$tests_file"
   echo "    @Test" >> "$tests_file"

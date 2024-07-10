@@ -1,0 +1,2 @@
+## "Permutation in String"
+Given two strings s1 and s2, write a function to check if s2 contains a permutation of s1. A permutation is a rearrangement of letters. You may assume that both strings only contain lowercase letters.

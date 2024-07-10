@@ -25,3 +25,6 @@ replay_pid*
 
 target
 .idea
+
+leetcode-chatgpt/node_modules
+leetcode-chatgpt/.env
