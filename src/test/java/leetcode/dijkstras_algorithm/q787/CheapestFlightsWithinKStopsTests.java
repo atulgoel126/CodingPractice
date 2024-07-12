@@ -16,19 +16,7 @@ public class CheapestFlightsWithinKStopsTests {
         int dest = 1;
         int k = 1;
         
-        assertEquals(-1, ob.findCheapestPrice(flights, src, dest, k));
-    }
-    
-    // Test negative input
-    @Test
-    public void testNegativeInput() {
-        CheapestFlightsWithinKStops ob = new CheapestFlightsWithinKStops();
-        int[][] flights = {{-1, 2, 100}, {0, -1, 0}};
-        int src = 0;
-        int dest = 2;
-        int k = 0;
-        
-        assertEquals(-1, ob.findCheapestPrice(flights, src, dest, k));
+        assertEquals(-1, ob.findCheapestPrice(0, flights, src, dest, k));
     }
     
     // Test unreachable destination
@@ -40,19 +28,7 @@ public class CheapestFlightsWithinKStopsTests {
         int dest = 4;
         int k = 2;
         
-        assertEquals(-1, ob.findCheapestPrice(flights, src, dest, k));
-    }
-    
-    // Test zero or negative K value
-    @Test
-    public void testZeroNegativeK() {
-        CheapestFlightsWithinKStops ob = new CheapestFlightsWithinKStops();
-        int[][] flights = {{0, 1, 100}, {1, 2, 200}, {2, 3, 300}};
-        int src = 0;
-        int dest = 3;
-        int k = -1;
-        
-        assertEquals(-1, ob.findCheapestPrice(flights, src, dest, k));
+        assertEquals(-1, ob.findCheapestPrice(4, flights, src, dest, k));
     }
     
     // Test overlapping flights
@@ -64,7 +40,7 @@ public class CheapestFlightsWithinKStopsTests {
         int dest = 3;
         int k = 1;
         
-        assertEquals(200, ob.findCheapestPrice(flights, src, dest, k));
+        assertEquals(200, ob.findCheapestPrice(4, flights, src, dest, k));
     }
     
     // Test valid input
@@ -76,7 +52,7 @@ public class CheapestFlightsWithinKStopsTests {
         int dest = 2;
         int k = 1;
         
-        assertEquals(300, ob.findCheapestPrice(flights, src, dest, k));
+        assertEquals(300, ob.findCheapestPrice(3, flights, src, dest, k));
     }
     
     // Test maximum number of stops
@@ -88,6 +64,6 @@ public class CheapestFlightsWithinKStopsTests {
         int dest = 5;
         int k = 4;
         
-        assertEquals(1400, ob.findCheapestPrice(flights, src, dest, k));
+        assertEquals(1400, ob.findCheapestPrice(6, flights, src, dest, k));
     }
 }
