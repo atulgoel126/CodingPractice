@@ -32,4 +32,15 @@ public class ListNode {
         result = 31 * result + (next != null ? next.hashCode() : 0);
         return result;
     }
+
+    public String printList() {
+        StringBuilder sb = new StringBuilder();
+        ListNode cur = this;
+        while (cur.next != null) {
+            sb.append(cur.val).append("->");
+            cur = cur.next;
+        }
+        sb.append(cur.val);
+        return sb.toString();
+    }
 }
