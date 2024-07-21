@@ -50,15 +50,4 @@ public class GenerateParenthesesTests {
         List<String> result = obj.generateParenthesis(10);
         assertEquals(16796, result.size());
     }
-    
-    @Test
-    public void testWithSpecialCharacters() {
-        List<String> expected = Arrays.asList("()()", "(())", "(()", "())", "(((");
-        List<String> result = obj.generateParenthesis(2);
-        assertNotEquals(expected, result);
-    }
-    
-    // Potential issue with input containing characters other than "(" or ")":
-    // The method should check for invalid characters and return an empty list instead.
-    
 }
