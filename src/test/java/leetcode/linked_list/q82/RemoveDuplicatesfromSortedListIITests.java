@@ -1,6 +1,8 @@
+package leetcode.linked_list.q82;
+
 import static org.junit.jupiter.api.Assertions.*;
 
-import leetcode.linked_list.q82.RemoveDuplicatesfromSortedListII;
+import leetcode.commons.ListNode;
 import org.junit.jupiter.api.Test;
 
 class RemoveDuplicatesfromSortedListIITests {
@@ -68,8 +70,8 @@ class RemoveDuplicatesfromSortedListIITests {
 
     private void removeDuplicatesAndAssert(ListNode head, ListNode expected) {
         RemoveDuplicatesfromSortedListII ob = new RemoveDuplicatesfromSortedListII();
-//        ListNode actual = ob.deleteDuplicates(head);
-//        assertListNodeEquals(expected, actual);
+        ListNode actual = ob.deleteDuplicates(head);
+        assertListNodeEquals(expected, actual);
     }
 
     private void assertListNodeEquals(ListNode expected, ListNode actual) {
@@ -85,14 +87,5 @@ class RemoveDuplicatesfromSortedListIITests {
 
         assertNull(expected);
         assertNull(actual);
-    }
-}
-
-class ListNode {
-    int val;
-    ListNode next;
-    
-    ListNode(int val) {
-        this.val = val;
     }
 }

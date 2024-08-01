@@ -121,7 +121,7 @@ This setup provides a comprehensive structure and automation for practicing codi
 ## My Study Plan
 
 ### Heap/Priority Queue (10 Medium Questions)
-1. **Question #347 (Medium)** - Top K Frequent Elements
+1. ✅ **Question #347 (Medium)** - Top K Frequent Elements
 2. **Question #692 (Medium)** - Top K Frequent Words
 3. **Question #451 (Medium)** - Sort Characters By Frequency
 4. **Question #973 (Medium)** - K Closest Points to Origin
@@ -133,11 +133,10 @@ This setup provides a comprehensive structure and automation for practicing codi
 10. **Question #759 (Medium)** - Employee Free Time
 
 ### Sorting/Searching (5 Medium Questions)
-1. **Question #34 (Medium)** - Find First and Last Position of Element in Sorted Array
-2. **Question #347 (Medium)** - Top K Frequent Elements
-3. **Question #658 (Medium)** - Find K Closest Elements
-4. **Question #912 (Medium)** - Sort an Array
-5. **Question #162 (Medium)** - Find Peak Element
+1. ✅ **Question #34 (Medium)** - Find First and Last Position of Element in Sorted Array
+2. ✅ **Question #658 (Medium)** - Find K Closest Elements
+3. ✅ **Question #912 (Medium)** - Sort an Array
+4. ✅ **Question #162 (Medium)** - Find Peak Element
 
 ### Dijkstra's Algorithm (3 Questions)
 1. **Question #743 (Medium)** - Network Delay Time
@@ -145,8 +144,8 @@ This setup provides a comprehensive structure and automation for practicing codi
 3. **Question #1631 (Medium)** - Path With Minimum Effort
 
 ### Prim's Algorithm (2 Questions)
-1. **Question #1584 (Medium)** - Min Cost to Connect All Points
-2. **Question #1135 (Medium)** - Connecting Cities With Minimum Cost
+1. ✅ **Question #1584 (Medium)** - Min Cost to Connect All Points
+2. ✅ **Question #1135 (Medium)** - Connecting Cities With Minimum Cost
 
 ### Union Find (4 Questions)
 1. **Question #684 (Medium)** - Redundant Connection
@@ -204,7 +203,7 @@ This setup provides a comprehensive structure and automation for practicing codi
 8. **Question #152 (Medium)** - Maximum Product Subarray
 
 ### Recursion with Strings (5 Questions)
-1. **Question #22 (Medium)** - Generate Parentheses
+1. ✅ **Question #22 (Medium)** - Generate Parentheses
 2. **Question #44 (Hard)** - Wildcard Matching
 3. **Question #93 (Medium)** - Restore IP Addresses
 4. **Question #131 (Medium)** - Palindrome Partitioning
@@ -248,9 +247,9 @@ This setup provides a comprehensive structure and automation for practicing codi
 4. **Question #567 (Medium)** - Permutation in String
 
 ### Matrix (5 Questions)
-1. **Question #36 (Medium)** - Valid Sudoku
-2. **Question #54 (Medium)** - Spiral Matrix
-3. **Question #48 (Medium)** - Rotate Image
+1. ✅ **Question #36 (Medium)** - Valid Sudoku
+2. ✅ **Question #54 (Medium)** - Spiral Matrix
+3. ✅ **Question #48 (Medium)** - Rotate Image
 4. **Question #73 (Medium)** - Set Matrix Zeroes
 5. **Question #289 (Medium)** - Game of Life
 
@@ -282,13 +281,13 @@ This setup provides a comprehensive structure and automation for practicing codi
 ### Linked List (10 Questions)
 
 1. **Question #141 (Easy)** - Linked List Cycle
-2. **Question #2 (Medium)** - Add Two Numbers
+2. ✅ **Question #2 (Medium)** - Add Two Numbers
 3. **Question #21 (Easy)** - Merge Two Sorted Lists
 4. **Question #138 (Medium)** - Copy List with Random Pointer
 5. **Question #92 (Medium)** - Reverse Linked List II
 6. **Question #25 (Hard)** - Reverse Nodes in k-Group
-7. **Question #19 (Medium)** - Remove Nth Node From End of List
-8. **Question #82 (Medium)** - Remove Duplicates from Sorted List II
+7. ✅ **Question #19 (Medium)** - Remove Nth Node From End of List
+8. ✅ **Question #82 (Medium)** - Remove Duplicates from Sorted List II
 9. **Question #61 (Medium)** - Rotate List
 10. **Question #86 (Medium)** - Partition List
 
@@ -309,10 +308,10 @@ This setup provides a comprehensive structure and automation for practicing codi
 4. **Question #417 (Medium)** - Pacific Atlantic Water Flow
 
 ### Misc Questions
-1. **Question #72 (Medium)** - Edit Distance
-2. **Question #146 (Medium)** - LRU Cache
-3. **Question #200 (Medium)** - Number of Islands
-4. **Question #938 (Easy)** - Range Sum of BST
+1. ✅ **Question #72 (Medium)** - Edit Distance
+2. ✅ **Question #146 (Medium)** - LRU Cache
+3. ✅ **Question #200 (Medium)** - Number of Islands
+4. ✅ **Question #938 (Easy)** - Range Sum of BST
 
 ## Total - 145 problems
-## Completed - 7 problems
+## Completed - 18 problems
