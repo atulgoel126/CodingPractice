@@ -4,8 +4,8 @@ This schedule is designed to help me prepare for the Google SDE3 interview, cove
 ## Day 1: Array/String and Two Pointers
 
 ### Array/String
-1. **[Merge Sorted Array (Easy)](https://leetcode.com/problems/merge-sorted-array/)** - Question #88
-2. **[Product of Array Except Self (Medium)](https://leetcode.com/problems/product-of-array-except-self/)** - Question #238
+1. ✅ **[Merge Sorted Array (Easy)](https://leetcode.com/problems/merge-sorted-array/)** - Question #88
+2. ✅ **[Product of Array Except Self (Medium)](https://leetcode.com/problems/product-of-array-except-self/)** - Question #238
 3. **[Trapping Rain Water (Hard)](https://leetcode.com/problems/trapping-rain-water/)** - Question #42
 
 ### Two Pointers

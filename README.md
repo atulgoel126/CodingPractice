@@ -210,7 +210,7 @@ This setup provides a comprehensive structure and automation for practicing codi
 5. **Question #301 (Hard)** - Remove Invalid Parentheses
 
 ### Array / String (20 Questions)
-1. **Question #88 (Easy)** - Merge Sorted Array
+1. ✅ **Question #88 (Easy)** - Merge Sorted Array
 2. **Question #27 (Easy)** - Remove Element
 3. **Question #26 (Easy)** - Remove Duplicates from Sorted Array
 4. **Question #80 (Medium)** - Remove Duplicates from Sorted Array II
@@ -222,7 +222,7 @@ This setup provides a comprehensive structure and automation for practicing codi
 10. **Question #45 (Medium)** - Jump Game II
 11. **Question #274 (Medium)** - H-Index
 12. **Question #380 (Medium)** - Insert Delete GetRandom O(1)
-13. **Question #238 (Medium)** - Product of Array Except Self
+13. ✅ **Question #238 (Medium)** - Product of Array Except Self
 14. **Question #134 (Medium)** - Gas Station
 15. **Question #135 (Hard)** - Candy
 16. **Question #42 (Hard)** - Trapping Rain Water
