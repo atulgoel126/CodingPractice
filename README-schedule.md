@@ -11,7 +11,7 @@ This schedule is designed to help me prepare for the Google SDE3 interview, cove
 ### Two Pointers
 4. ✅ **[Container With Most Water (Medium)](https://leetcode.com/problems/container-with-most-water/)** - Question #11
 5. ✅ **[Longest Substring Without Repeating Characters (Medium)](https://leetcode.com/problems/longest-substring-without-repeating-characters/)** - Question #3
-6. **[3Sum (Medium)](https://leetcode.com/problems/3sum/)** - Question #15
+6. ✅ **[3Sum (Medium)](https://leetcode.com/problems/3sum/)** - Question #15
 
 ---
 
