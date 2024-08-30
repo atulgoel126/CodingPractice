@@ -1,8 +1,8 @@
 //package leetcode.dynamic_programming.q494;
 //
-//import static org.junit.jupiter.api.Assertions.*;
 //import org.junit.jupiter.api.Test;
-//import leetcode.dynamic_programming.q494.TargetSum;
+//
+//import static org.junit.jupiter.api.Assertions.assertEquals;
 //
 //public class TargetSumTests {
 //
@@ -56,5 +56,4 @@
 //    int target = -10;
 //    assertEquals(targetSum.findTargetSumWays(nums, target), 0);
 //  }
-//
 //}

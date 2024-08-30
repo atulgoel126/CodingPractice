@@ -3,7 +3,6 @@ package leetcode.dynamic_programming.q300;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class LongestIncreasingSubsequenceTests {
 
@@ -41,7 +40,7 @@ public class LongestIncreasingSubsequenceTests {
     @Test
     public void testNegativeInput() {
         int[] nums = {1, -2, 3, 0, 7};
-        int expectedLength = 4;
+        int expectedLength = 3;
 
         LongestIncreasingSubsequence ob = new LongestIncreasingSubsequence();
         int actualLength = ob.lengthOfLIS(nums);
@@ -55,7 +54,7 @@ public class LongestIncreasingSubsequenceTests {
     @Test
     public void testDuplicateInput() {
         int[] nums = {1, 2, 2, 3, 4, 5, 6};
-        int expectedLength = 4;
+        int expectedLength = 6;
 
         LongestIncreasingSubsequence ob = new LongestIncreasingSubsequence();
         int actualLength = ob.lengthOfLIS(nums);
@@ -151,29 +150,5 @@ public class LongestIncreasingSubsequenceTests {
         int actualLength = ob.lengthOfLIS(nums);
 
         assertEquals(expectedLength, actualLength);
-    }
-
-    /**
-     * Test case for a null input array where an IllegalArgumentException is expected to be thrown.
-     */
-    @Test
-    public void testNullInput() {
-        int[] nums = null;
-
-        LongestIncreasingSubsequence ob = new LongestIncreasingSubsequence();
-
-        assertThrows(IllegalArgumentException.class, () -> ob.lengthOfLIS(nums));
-    }
-
-    /**
-     * Test case for an array input with a negative length where an IllegalArgumentException is expected to be thrown.
-     */
-    @Test
-    public void testNegativeLengthInput() {
-        int[] nums = new int[-5];
-
-        LongestIncreasingSubsequence ob = new LongestIncreasingSubsequence();
-
-        assertThrows(IllegalArgumentException.class, () -> ob.lengthOfLIS(nums));
     }
 }

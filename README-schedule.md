@@ -20,9 +20,9 @@ This schedule is designed to help me prepare for the Google SDE3 interview, cove
 1. ✅ **[House Robber (Medium)](https://leetcode.com/problems/house-robber/)** - Question #198
 2. ✅ **[Coin Change (Medium)](https://leetcode.com/problems/coin-change/)** - Question #322
 3. ✅ **[Longest Increasing Subsequence (Medium)](https://leetcode.com/problems/longest-increasing-subsequence/)** - Question #300
-4. **[Partition Equal Subset Sum (Medium)](https://leetcode.com/problems/partition-equal-subset-sum/)** - Question #416
-5. **[Target Sum (Medium)](https://leetcode.com/problems/target-sum/)** - Question #494
-6. **[Maximum Product Subarray (Medium)](https://leetcode.com/problems/maximum-product-subarray/)** - Question #152
+4. ✅ **[Partition Equal Subset Sum (Medium)](https://leetcode.com/problems/partition-equal-subset-sum/)** - Question #416
+5.  **[Target Sum (Medium)](https://leetcode.com/problems/target-sum/)** - Question #494
+6. ✅ **[Maximum Product Subarray (Medium)](https://leetcode.com/problems/maximum-product-subarray/)** - Question #152
 
 ---
 
