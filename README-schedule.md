@@ -28,19 +28,18 @@ This schedule is designed to help me prepare for the Google SDE3 interview, cove
 
 ## Day 3: Heap/Priority Queue
 
-1. **[Top K Frequent Elements (Medium)](https://leetcode.com/problems/top-k-frequent-elements/)** - Question #347
-2. **[Top K Frequent Words (Medium)](https://leetcode.com/problems/top-k-frequent-words/)** - Question #692
-3. **[Kth Largest Element in an Array (Medium)](https://leetcode.com/problems/kth-largest-element-in-an-array/)** - Question #215
-4. **[Kth Smallest Element in a Sorted Matrix (Medium)](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/)** - Question #378
-5. **[K Closest Points to Origin (Medium)](https://leetcode.com/problems/k-closest-points-to-origin/)** - Question #973
-6. **[Employee Free Time (Medium)](https://leetcode.com/problems/employee-free-time/)** - Question #759
+1. ✅ **[Top K Frequent Elements (Medium)](https://leetcode.com/problems/top-k-frequent-elements/)** - Question #347
+2. ✅ **[Top K Frequent Words (Medium)](https://leetcode.com/problems/top-k-frequent-words/)** - Question #692
+3. ✅ **[Kth Largest Element in an Array (Medium)](https://leetcode.com/problems/kth-largest-element-in-an-array/)** - Question #215
+4. ✅ **[Kth Smallest Element in a Sorted Matrix (Medium)](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/)** - Question #378
+5. ✅ **[K Closest Points to Origin (Medium)](https://leetcode.com/problems/k-closest-points-to-origin/)** - Question #973
 
 ---
 
 ## Day 4: Graph Algorithms and Union Find
 
 ### Graph Algorithms
-1. **[Course Schedule (Medium)](https://leetcode.com/problems/course-schedule/)** - Question #207
+1. ✅ **[Course Schedule (Medium)](https://leetcode.com/problems/course-schedule/)** - Question #207
 2. **[Network Delay Time (Medium)](https://leetcode.com/problems/network-delay-time/)** - Question #743
 
 ### Union Find
