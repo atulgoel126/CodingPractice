@@ -39,7 +39,7 @@ This schedule is designed to help me prepare for the Google SDE3 interview, cove
 ## Day 4: Graph Algorithms and Union Find
 
 ### Graph Algorithms
-1. **[Course Schedule (Medium)](https://leetcode.com/problems/course-schedule/)** - Question #207
+1. ✅ **[Course Schedule (Medium)](https://leetcode.com/problems/course-schedule/)** - Question #207
 2. **[Network Delay Time (Medium)](https://leetcode.com/problems/network-delay-time/)** - Question #743
 
 ### Union Find
